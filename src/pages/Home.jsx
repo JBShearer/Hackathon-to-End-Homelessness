@@ -46,16 +46,16 @@ function Home() {
             </div>
             <div className="hero-stats">
               <div className="stat">
-                <span className="stat-number">800+</span>
-                <span className="stat-label">Students Joining</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">Dec 11</span>
-                <span className="stat-label">LA USD Kickoff</span>
-              </div>
-              <div className="stat">
                 <span className="stat-number">Open</span>
-                <span className="stat-label">Year-Round</span>
+                <span className="stat-label">Source</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">Free</span>
+                <span className="stat-label">To Join</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">24/7</span>
+                <span className="stat-label">Collaboration</span>
               </div>
             </div>
           </div>

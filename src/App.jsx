@@ -4,6 +4,7 @@ import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Signup from './pages/Signup'
 import LootLocker from './pages/LootLocker'
 import ProjectGamer from './pages/ProjectGamer'
 import Community from './pages/Community'
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/loot-locker" element={<LootLocker />} />
             <Route path="/project-gamer" element={<ProjectGamer />} />
             <Route path="/community" element={<Community />} />
