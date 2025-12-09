@@ -1,0 +1,43 @@
+{
+  "name": "hackathon-to-end-homelessness",
+  "version": "1.0.0",
+  "description": "A gamified community platform to coordinate volunteer efforts and develop solutions for ending homelessness",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.0.8"
+  },
+  "keywords": [
+    "homelessness",
+    "hackathon",
+    "community",
+    "gamification",
+    "social-impact",
+    "volunteer",
+    "stem-education"
+  ],
+  "author": "Hackathon to End Homelessness",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hackathon-to-end-homelessness"
+  }
+}
