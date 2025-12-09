@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import Home from './pages/Home'
@@ -16,26 +17,28 @@ import NotFound from './pages/NotFound'
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/loot-locker" element={<LootLocker />} />
-          <Route path="/project-gamer" element={<ProjectGamer />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/learning" element={<Learning />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/student-guide" element={<StudentGuide />} />
-          <Route path="/teacher-resources" element={<TeacherResources />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <AuthProvider>
+      <div className="app">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/loot-locker" element={<LootLocker />} />
+            <Route path="/project-gamer" element={<ProjectGamer />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/learning" element={<Learning />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/student-guide" element={<StudentGuide />} />
+            <Route path="/teacher-resources" element={<TeacherResources />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </AuthProvider>
   )
 }
 

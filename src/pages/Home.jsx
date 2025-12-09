@@ -1,9 +1,30 @@
 import { Link } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 import './Home.css'
 
 function Home() {
+  const { isConfigured } = useAuth()
+
   return (
     <div className="home">
+      {/* Supabase Connection Status */}
+      {isConfigured && (
+        <div style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          background: '#10b981',
+          color: 'white',
+          padding: '0.75rem 1.25rem',
+          borderRadius: '0.5rem',
+          boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+          fontSize: '0.875rem',
+          fontWeight: '500',
+          zIndex: 1000
+        }}>
+          ✅ Connected to Supabase
+        </div>
+      )}
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
