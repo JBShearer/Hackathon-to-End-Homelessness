@@ -1,0 +1,101 @@
+.business-process-card {
+  display: block;
+  padding: 1.5rem;
+  background: white;
+  border: 2px solid var(--gray-200);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.business-process-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--category-color);
+  transition: width 0.2s ease;
+}
+
+.business-process-card:hover {
+  border-color: var(--category-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.business-process-card:hover::before {
+  width: 6px;
+}
+
+.process-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.process-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.process-info {
+  flex: 1;
+}
+
+.process-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  color: var(--gray-900);
+}
+
+.process-description {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.process-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-100);
+  font-size: 0.875rem;
+}
+
+.process-timeframe {
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.process-topics {
+  color: var(--category-color);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .business-process-card {
+    padding: 1rem;
+  }
+
+  .process-icon {
+    font-size: 1.5rem;
+  }
+
+  .process-info h3 {
+    font-size: 1rem;
+  }
+
+  .process-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
