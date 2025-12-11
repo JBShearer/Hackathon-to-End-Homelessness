@@ -74,7 +74,7 @@ function Home() {
           
           <div className="loot-locker-grid">
             <div className="locker-card">
-              <div className="locker-icon">📸</div>
+              <div className="locker-icon">IN</div>
               <h3>Drop Loot Cabinet</h3>
               <p>AI-powered intake with photogrammetry, object recognition, and conversational AI to classify donations.</p>
               <ul className="tech-list">
@@ -85,7 +85,7 @@ function Home() {
             </div>
 
             <div className="locker-card">
-              <div className="locker-icon">🎁</div>
+              <div className="locker-icon">OUT</div>
               <h3>Get Loot Cabinet</h3>
               <p>Holographic display and touchscreen interface connected to cloud logistics and warehouse systems.</p>
               <ul className="tech-list">
@@ -96,7 +96,7 @@ function Home() {
             </div>
 
             <div className="locker-card">
-              <div className="locker-icon">🚀</div>
+              <div className="locker-icon">XP</div>
               <h3>Your Challenge</h3>
               <p>Build optical recognition, metadata extraction, conversational interfaces, or cloud integrations.</p>
               <ul className="tech-list">
@@ -119,37 +119,37 @@ function Home() {
           <h2>Why Join Our Community?</h2>
           <div className="benefits-grid">
             <div className="benefit-card">
-              <div className="benefit-icon">🎮</div>
+              <div className="benefit-icon">GX</div>
               <h3>Gamified Experience</h3>
               <p>Earn points, unlock achievements, and compete on leaderboards as you contribute.</p>
             </div>
 
             <div className="benefit-card">
-              <div className="benefit-icon">💻</div>
+              <div className="benefit-icon">SK</div>
               <h3>Real Skills</h3>
               <p>Learn AI/ML, cloud computing, IoT, and enterprise systems like SAP.</p>
             </div>
 
             <div className="benefit-card">
-              <div className="benefit-icon">🏆</div>
+              <div className="benefit-icon">RW</div>
               <h3>Epic Rewards</h3>
               <p>Top contributors get exclusive event access, merch, and recognition.</p>
             </div>
 
             <div className="benefit-card">
-              <div className="benefit-icon">🌍</div>
+              <div className="benefit-icon">IM</div>
               <h3>Make Impact</h3>
               <p>Your code directly helps people experiencing homelessness.</p>
             </div>
 
             <div className="benefit-card">
-              <div className="benefit-icon">👥</div>
+              <div className="benefit-icon">CM</div>
               <h3>Build Community</h3>
               <p>Connect with students, mentors, NGOs, and industry professionals.</p>
             </div>
 
             <div className="benefit-card">
-              <div className="benefit-icon">📚</div>
+              <div className="benefit-icon">LR</div>
               <h3>Learn Together</h3>
               <p>Access tutorials, tools, and guidance for every skill level.</p>
             </div>
@@ -195,21 +195,21 @@ function Home() {
           <h2>More Initiatives</h2>
           <div className="project-cards">
             <div className="project-card">
-              <div className="project-icon">🎯</div>
+              <div className="project-icon">PG</div>
               <h3>Project Gamer</h3>
               <p>Generative AI to Manage Emergency Response. Build strategy games for city planning and first responders.</p>
               <Link to="/project-gamer" className="project-link">Learn More →</Link>
             </div>
 
             <div className="project-card">
-              <div className="project-icon">🏙️</div>
+              <div className="project-icon">SC</div>
               <h3>Smart City Planning</h3>
               <p>Create digital twins of cities using SAP Analytics Cloud and dataspace concepts.</p>
               <Link to="/projects" className="project-link">Explore Projects →</Link>
             </div>
 
             <div className="project-card">
-              <div className="project-icon">🔧</div>
+              <div className="project-icon">SH</div>
               <h3>Solution Hacks</h3>
               <p>Build specific tools for shelters, NGOs, and service providers.</p>
               <Link to="/community" className="project-link">Join Discussion →</Link>
