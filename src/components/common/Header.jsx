@@ -38,6 +38,7 @@ function Header() {
             <Link to="/learning" onClick={() => setIsMenuOpen(false)}>Learning</Link>
             <Link to="/events" onClick={() => setIsMenuOpen(false)}>Events</Link>
             <Link to="/leaderboard" onClick={() => setIsMenuOpen(false)}>Leaderboard</Link>
+            <Link to="/login" onClick={() => setIsMenuOpen(false)}>Log In</Link>
             <Link to="/signup" className="btn-cta" onClick={() => setIsMenuOpen(false)}>
               Sign Up
             </Link>
