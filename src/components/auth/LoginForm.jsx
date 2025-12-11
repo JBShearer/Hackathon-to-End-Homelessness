@@ -57,7 +57,19 @@ function LoginForm() {
       const { error: signInError } = await signIn(formData.email, formData.password)
 
       if (signInError) {
-        setError(signInError.message)
+        const message = signInError.message || ''
+        const normalized = message.toLowerCase()
+
+        if (normalized.includes('confirm') || normalized.includes('verified')) {
+          setError(
+            "You need to verify your email before you can log in. Check your inbox (and spam folder) for a verification email, then try again."
+          )
+        } else if (normalized.includes('invalid login credentials')) {
+          setError('Incorrect email or password. Please try again.')
+        } else {
+          setError(message || 'Unable to log in. Please try again.')
+        }
+
         setLoading(false)
         return
       }

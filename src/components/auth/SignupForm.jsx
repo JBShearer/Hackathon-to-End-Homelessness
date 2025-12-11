@@ -102,8 +102,14 @@ function SignupForm() {
       <div className="signup-success">
         <div className="success-icon">✅</div>
         <h2>Welcome to the Community!</h2>
-        <p>Check your email to verify your account.</p>
-        <p>Redirecting you to the community...</p>
+        <p>
+          We've created your account, but you need to verify your email before you can
+          log in.
+        </p>
+        <p>
+          Check your inbox (and spam folder) for a verification email, then click the
+          link inside. After you confirm, you can log in and fully join the community.
+        </p>
       </div>
     )
   }
