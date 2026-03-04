@@ -17,6 +17,10 @@ function Footer() {
 
           <div className="footer-section footer-links-quick">
             <Link to="/">Site Status</Link>
+            <Link to="/student-guide">Student Guide</Link>
+            <Link to="/facilitator-guide">Facilitator Guide</Link>
+            <Link to="/project-gamer">Project GAMER</Link>
+            <Link to="/loot-locker">Loot Locker</Link>
             <a
               href="https://github.com/JBShearer/Hackathon-to-End-Homelessness"
               target="_blank"

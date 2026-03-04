@@ -4,6 +4,23 @@ function LootLocker() {
       <header style={{ marginBottom: '2.5rem' }}>
         <p
           style={{
+            display: 'inline-block',
+            marginBottom: '0.85rem',
+            padding: '0.35rem 0.8rem',
+            borderRadius: '999px',
+            backgroundColor: 'var(--secondary-50)',
+            color: 'var(--secondary-700)',
+            fontSize: '0.8rem',
+            fontWeight: 700,
+            letterSpacing: '0.04em',
+            textTransform: 'uppercase',
+          }}
+        >
+          Core concept retained during pivot
+        </p>
+
+        <p
+          style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '0.5rem',
@@ -41,6 +58,73 @@ function LootLocker() {
           A robotic donation system with AI-powered intake, SAP-integrated logistics,
           and smart locker control. The digital twin of a circular economy in action.
         </p>
+
+        <div
+          style={{
+            marginTop: '1.25rem',
+            padding: '1rem 1.15rem',
+            borderRadius: '0.75rem',
+            border: '1px solid var(--gray-200)',
+            backgroundColor: 'white',
+            maxWidth: '58rem',
+          }}
+        >
+          <strong>BTP Tailoring Note:</strong> this page is currently architecture-first.
+          Next content pass should map each flow to your exact BTP subaccount setup,
+          identity model, destinations, API security, and service ownership.
+        </div>
+
+        <section
+          style={{
+            marginTop: '1.25rem',
+            padding: '1rem 1.15rem',
+            borderRadius: '0.75rem',
+            border: '1px solid var(--gray-200)',
+            backgroundColor: 'white',
+            maxWidth: '58rem',
+          }}
+        >
+          <h2 style={{ fontSize: '1.35rem', marginBottom: '0.65rem' }}>Concept Video</h2>
+          <p style={{ marginBottom: '0.8rem' }}>
+            This Iris video explains the Loot Locker concept.
+          </p>
+
+          <div
+            style={{
+              position: 'relative',
+              width: '100%',
+              paddingTop: '56.25%',
+              borderRadius: '0.7rem',
+              overflow: 'hidden',
+              border: '1px solid var(--gray-200)',
+              backgroundColor: 'var(--gray-100)',
+            }}
+          >
+            <iframe
+              title="Loot Locker Concept Video"
+              src="https://iris.video.sap.com/message/6a9239f65aa0a7f8c5b928f645793b7a50e604aca5bfac89d50776989c17"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                border: 0,
+              }}
+            />
+          </div>
+
+          <p style={{ marginTop: '0.8rem', marginBottom: 0, fontSize: '0.95rem', color: 'var(--gray-600)' }}>
+            If your browser blocks embedding due to Iris security settings, open the video directly:{' '}
+            <a
+              href="https://iris.video.sap.com/message/6a9239f65aa0a7f8c5b928f645793b7a50e604aca5bfac89d50776989c17"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on Iris
+            </a>
+          </p>
+        </section>
       </header>
 
       <div
@@ -268,6 +352,27 @@ function LootLocker() {
           category can be a standalone student project or part of a larger
           end-to-end solution.
         </p>
+      </section>
+
+      <section
+        style={{
+          marginTop: '2rem',
+          padding: '1.5rem',
+          borderRadius: '0.9rem',
+          backgroundColor: 'var(--primary-50)',
+          border: '1px solid var(--primary-200)',
+        }}
+      >
+        <h2 style={{ marginBottom: '0.8rem' }}>BTP Environment Mapping Checklist</h2>
+        <ul style={{ marginBottom: 0, lineHeight: 1.9 }}>
+          <li><strong>Identity:</strong> map participant, approver, and admin roles to Cloud Identity groups/claims.</li>
+          <li><strong>Build Apps:</strong> establish app lifecycle (dev/test/prod) and naming conventions by cohort.</li>
+          <li><strong>HANA Cloud:</strong> confirm schema ownership, table retention rules, and audit requirements.</li>
+          <li><strong>Process Automation:</strong> align approval steps with real business owners and escalation timing.</li>
+          <li><strong>Integration Suite:</strong> define destinations for locker APIs and any cross-agency service endpoints.</li>
+          <li><strong>AI Services:</strong> register approved model endpoints and confidence thresholds for human override.</li>
+          <li><strong>Observability:</strong> define where facilitators monitor errors during live hackathon sessions.</li>
+        </ul>
       </section>
     </div>
   )
